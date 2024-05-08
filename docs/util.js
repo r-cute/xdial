@@ -2,6 +2,7 @@ q=(s,e)=>(e??document).querySelector(s);
 qa=(s,e)=>[...(e??document).querySelectorAll(s)];
 zip=(x,...y)=>x.map((v,i)=>[v,...y.map(j=>j[i])]);
 get_json=s=>fetch(s).then(r=>r.text()).then(r=>eval(`(${r})`));
+a2b=(a,b)=>[...range(b-a)].map(x=>x+a);
 b2i=b=>b?1:0;
 is_num=s=>/^-?\d+$/.test(s);
 is_str=s=>typeof(s)=='string';
