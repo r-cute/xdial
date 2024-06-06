@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><title>XDial</title><meta charset="UTF-8"><meta name='viewport' content='width=device-width, initial-scale=1'/><style>
+<!DOCTYPE html><html><head><title>xDial</title><meta charset="UTF-8"><meta name='viewport' content='width=device-width, initial-scale=1'/><style>
 	*{font-size:1em;margin:.25em}h1{font-size:1.25em;text-align:center;}
 	h2{margin:.75em auto;}h2::after{content:"➖";float:right;}.hidden>h2::after{content:"➕"}
 	.hidden>:not(h2){display:none}section{border-top:1px solid #ccc}
@@ -39,7 +39,7 @@ addEventListener('load',()=>{
 				<li><a href='https://dev.qweather.com/' target='_blank'>注册</a>和风天气的开发账号。</li>
 				<li>登录<a href='https://console.qweather.com/#/apps' target='_blank'>项目管理</a>页面 > 点击<i>创建项目</i> > 选择<i>免费订阅</i>和<i>Web API</i> > <i>创建</i> > <i>查看</i>并复制 KEY。</li>
 				<li>转到<i>设置</i>页面，在<i>天气</i>里填入 KEY，查找并选择您所在城市，然后点击<i>保存</i>。</li>
-				<li>进入设备的<u>天气</u>界面查看，若仍然没有数据，可点击右键刷新，根据对应的<a href='https://dev.qweather.com/docs/resource/status-code/' target='_blank'>错误状态码</a>排查原因。</li>
+				<li>进入设备的<u>天气</u>界面查看，若仍然没有数据，可点击右键刷新，根据对应的<a href='https://dev.qweather.com/docs/resource/status-code/' target='_blank'>错误状态码</a>可选表盘</li>
 			</ol>
 		</p>
 		<p><a href='get_qweather_key.vid.html' target='_blank'>视频演示</a></p>
@@ -48,12 +48,12 @@ addEventListener('load',()=>{
 		</p>
 	</section>	
 	<section id='delete_clock_face'>
-		<h2>下载自选表盘后设备不断重启</h2>
+		<h2>下载可选表盘后设备不断重启</h2>
 		<p>表盘下载过程出错或表盘文件本身格式错误都可能导致设备在加载表盘时出错而重启。</p>
-		<p>您可以尝试让设备启动时跳过表盘加载，然后进入设置页面删除自选表盘：
+		<p>您可以尝试让设备启动时跳过表盘加载，然后进入设置页面删除可选表盘：
 			<ol>
 				<li>在设备上电前按住<em>右</em>键，并在启动时保持按下状态约1秒直到“嘀”的一声。</li>
-				<li>若设备能顺利启动，您可以在<i>设置</i>页面 > <i>表盘</i> > <i>(自选表盘)</i> > 点击<i>删除</i>按钮来删除自选表盘。</li>
+				<li>若设备能顺利启动，您可以在<i>设置</i>页面 > <i>表盘</i> > <i>(可选表盘)</i> > 点击<i>删除</i>按钮来删除可选表盘。</li>
 				<li>若问题仍未解决，您可以尝试<a href='#' onclick='q("#factory_reset>h2").click()'>恢复出厂设置</a>。</li>
 			</ol>
 		</p>
@@ -63,7 +63,7 @@ addEventListener('load',()=>{
 		<p>您可以在设备启动阶段恢复出厂设置，这可能有助于解决一些未知问题：
 			<ol>
 				<li>在设备上电前同时按住<em>左</em>键和<em>右</em>键，并在启动时保持按下状态约1秒直到“嘀嘀”两声。</li>
-				<li>此时设备将删除设置页面里的所有个性化设置（包括和风天气的 KEY 和自选表盘），但保留 WiFi 设置。</li>
+				<li>此时设备将删除设置页面里的所有个性化设置（包括和风天气的 KEY 和可选表盘），但保留 WiFi 设置。</li>
 			</ol>
 		</p>
 	</section>
