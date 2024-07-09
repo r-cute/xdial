@@ -18,6 +18,7 @@ Device will provide a WiFi hotspot named "xDial-xxxx", last four digits being de
 
 Then the device will reboot and WiFi configuration will be saved.
 
+
 .. raw:: html
 
    <div class="hor">

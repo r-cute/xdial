@@ -3,11 +3,25 @@
 
 设备可作为一个简易的电脑主机性能监视屏，其原理是在主机端运行一个程序，定期获取性能数据并发送给设备用于显示。
 
+.. figure:: _static/menu_perfmon.dev.png
+   :class: dev
+
+   进入设备的性能监视界面
+
+.. figure:: _static/perfmon.dev.png
+   :class: dev
+
+   点击右键 ⊙ 可以开启/关闭性能监视功能
+
+同时，您需要根据主机的操作系统下载并运行对应的程序。
+
+.. toctree::
+   :maxdepth: 1
+
+   perfmon_win
+   perfmon_mac
+   perfmon_linux
+
 .. warning::
-   由于主机的 CPU、 GPU 型号各异，且运行于不同平台，该功能不敢保证兼容性，将来会继续完善。
+   目前刚适配了 Windows 平台，将来会继续完善。
 
-.. note::
-   如果必须确认兼容性，您可以先根据引导，只安装主机端程序，点击 “测试” 按钮看其能否获得性能数据。
-
-安装主机端程序
-------------------
