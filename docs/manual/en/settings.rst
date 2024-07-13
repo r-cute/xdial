@@ -13,11 +13,6 @@ Settings
 
 Go to the settings web page by scaning the QR code on your device or visiting the URL below it.
 
-
-.. note::
-   It's recommended to bind the device to a static IP address. Usually this can be done in the configurtion page of your WiFi router.
-
-
 .. image:: _static/settings.web.png
    :class: web
    :align: center

@@ -13,11 +13,6 @@
 
 扫描二维码或访问二维码下方的网址，进入网页版设置页面
 
-.. note::
-   设备的 IP 地址是由 WiFi 路由器分配的，建议您为设备绑定一个固定的 IP 地址，这样设备重启后 IP 地址不会变。通常这可以在 WiFi 路由器的设置页面中完成。
-
-
-
 .. image:: _static/settings.web.png
    :class: web
    :align: center

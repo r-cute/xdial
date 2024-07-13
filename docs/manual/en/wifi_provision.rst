@@ -18,6 +18,8 @@ Device will provide a WiFi hotspot named "xDial-xxxx", last four digits being de
 
 Then the device will reboot and WiFi configuration will be saved.
 
+.. note::
+   It's recommended to bind the device's MAC address to a static IP address. Usually this can be done in the configurtion page of your WiFi router.
 
 .. raw:: html
 
