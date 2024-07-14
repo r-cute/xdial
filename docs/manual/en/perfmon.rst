@@ -13,7 +13,7 @@ The device can act as a simple performance monitor to show your PC's CPU/GPU/RAM
 
    Press right buttton ⊙ to turn on/off perfmon server.
 
-Regarding your PC's OS, you need to download and run a respective client software, which can periodically read and send performance data to device.
+You also need to download and run a client software on your PC, which can periodically read and send performance data to device.
 
 .. toctree::
    :maxdepth: 1

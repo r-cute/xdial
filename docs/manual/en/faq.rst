@@ -1,57 +1,56 @@
 FAQ
 ============
 
-如何重置 WiFi？
-----------------
+How to re-configure WiFi settings?
+---------------------------------------
 
-设备启动时若无法连接 WiFi，会自动进入 WiFi 配网状态。
+When the device failed to access WiFi network on startup, it will enter WiFi provision mode.
 
-在设备已经联网时，如果需要重置或更改 WiFi 配置，可以手动让设备进入配网状态：
+It can also be manually set it to WiFi provision mode, by:
 
-	#. 在设备上电前按住 **左键** ，并在启动时保持按下状态约 1 秒直到 “嘀” 的一声。
-	#. 根据提示连接设备提供的 WiFi 热点进行设置。
+	#. Hold down **left button**, then power on device, until a "beep" sound.
+	#. Follow instructions on device's screen, connect to its WiFi hotspot, then re-configure WiFi settings.
 
-无法访问设置页面
----------------------------
+Unable to visit device's settings web page
+---------------------------------------------
 			
-	#. 确保设备与您的手机处于同一局域网内。
-	#. `开启设备的设置功能 <settings/>`_
+	#. Make sure your phone is on the same LAN as the device.
+	#. Check that the device's `settings server is turned on <settings.html>`_
 						
-没有天气数据
--------------------
+Weather interface shows no data
+------------------------------------
 
-	#. 完成 `天气设置 <weather/>`_
-	#. 若天气界面仍然没有数据，可点击右键刷新，根据和风天气网站对应的 `错误状态码 <https://dev.qweather.com/docs/resource/status-code/>`_ 排查原因。
+	#. Follow instructions on how to `setup weather data <weather.html>`_
+	#. In the device's weather interface, click right button to force a manual update, see if any :xref:`error code <https://dev.qweather.com/en/docs/resource/status-code/>` shows up.
 		
-下载表盘后设备不断重启
-------------------------------
 
-表盘下载过程出错或表盘文件本身格式错误都可能导致设备在加载表盘时出错而重启。
+Device reboots infinitely after downloading new clock face
+---------------------------------------------------------------
 
-您可以尝试让设备启动时跳过表盘加载，然后进入设置页面删除可选表盘：
+If errors occur when downloading optional clock faces, or the downloaded resource is malformed, the device may have problem loading the resources on startup, then it reboots, and then fail again...
 
-	#. 在设备上电前按住 **右键** ，并在启动时保持按下状态约 1 秒直到 “嘀” 的一声。
-	#. 若设备能顺利启动，您可以在 *设置* 页面 → *表盘* → *(可选表盘n)* → 点击 *删除* 按钮来删除对应表盘。
-	#. 若问题仍未解决，您可以尝试 :ref:`恢复出厂设置 <如何恢复出厂设置？>` 。
+You can force device to skip loading clock face resources on startup, then delete them:
+
+	#. Hold down **right button**, then power on device, until a "beep" sound.
+	#. After device starts, go to the settings web page → *Clock Faces* → select *(Optional N)* from dropdown menu → click *delete* button.
+	#. Check for `firmware updates <ota.html>`_.
+	#. If the problem remains, try :ref:`factory reset <How to factory reset?>`
 			
 		
 	
-如何恢复出厂设置？
+How to factory reset?
 -------------------------
 
-* 在设置页面点击 **重置** 按钮，设备将恢复出厂设置并重启。
+* Click the *reset* button in settings web page.
 
-\
+* Or, you can hard reset device on startup by:
+	
+	#. Hold down **both buttons**, then power on device, until you hear 2 "beep" sound.
+	#. Now the device will delete all custom settings, including QWeather KEY and any optional clock faces, but WiFi settings will be kept.
 
-* 也可以在设备启动阶段恢复出厂设置：
-
-	#. 在设备上电前同时按住 **左键和右键** ，并在启动时保持按下状态约 1 秒直到 “嘀嘀” 两声。	
-	#. 此时设备将删除设置页面里的所有个性化设置（包括和风天气的 KEY 和可选表盘），但保留 WiFi 设置。
 		
 		
-	
-如何制作表盘？
-------------------
+Can I design my own clock face (and share it)?
+---------------------------------------------------
 
-表盘制作教程还在准备中...
-	
+It's still impractical for users to design custom clock faces, because currently we don't have a user-friendly software with graphical interface to facilitate this.

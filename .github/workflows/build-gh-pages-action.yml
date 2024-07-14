@@ -4,6 +4,8 @@ name: Build and deploy website to github pages
 on:
   push:
     branches: [ master ]
+  repository_dispatch:
+    types: [ sub-page-update ]
  
 jobs:
  
@@ -17,6 +19,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.4
+        with:
+          path: './xdial'
+
+      - name: Checkout xdial-cf-gallery
+        uses: actions/checkout@v2.3.4
+        with:
+          repository: r-cute/xdial-cf-gallery
+          path: './xdial-cf-gallery'
 
       - name: Set up Python
         uses: actions/setup-python@v2.2.1
@@ -26,16 +36,21 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install -U sphinx
-          python -m pip install -r docs/manual/requirements.txt
+          python -m pip install -r xdial/docs/manual/requirements.txt
 
       - name: make the sphinx docs
         run: |
-          cd docs/manual
+          cd xdial/docs/manual
           bash gh_make.sh ../../manual
           cd ../..
           cp docs/manual/index.html manual
           rm -r docs/manual
           mv manual docs
+          cd ..
+
+      - name: copy subproject to subdir
+        run: |
+          cp -r xdial-cf-gallery/docs xdial/docs/gallery
 
       # - name: Init new repo in dist folder and commit generated files
       #   run: |
@@ -49,7 +64,7 @@ jobs:
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+          publish_dir: ./xdial
           force_orphan: true
 
       # - name: Force push to destination branch

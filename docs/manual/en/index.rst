@@ -28,7 +28,9 @@ Product parameters
    "Flash", "32 Mbit"
    "Language", "En/中文"
 
-⚠️ The shell is 3D printed with resin, it may soften and deform in high-temperature environment.
+.. warning::
+
+   The shell is 3D printed with resin, it may soften and deform in high-temperature environment.
 
 
 ..

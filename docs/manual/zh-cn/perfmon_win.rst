@@ -1,7 +1,7 @@
 Windows 性能监视
 +++++++++++++++++++
 
-下载主机端程序 |LibreHardwareMonitor_for_xDial.zip| ，**全部解压** 后运行 LibreHardwareMonitor_for_xDial.exe（可能需要管理员权限）
+下载主机端程序 :xref:`LibreHardwareMonitor_for_xDial.zip <https://gitee.com/r-cute/LibreHardwareMonitor_for_xDial/releases/latest>` ，**全部解压** 后运行 LibreHardwareMonitor_for_xDial.exe（可能需要管理员权限）
 
 .. image:: _static/librehardwaremonitor_exe.png
    :class: libre
@@ -12,7 +12,7 @@ Windows 性能监视
 
 
 .. note::
-   该软件需要 .NET 4.7.2 或以上版本支持，Windows 7 以及更早的系统可能需要自行 |下载安装 .NET Framework 4.7 Runtime|
+   该软件需要 .NET 4.7.2 或以上版本支持，Windows 7 以及更早的系统可能需要自行 :xref:`下载安装 .NET Framework 4.7 运行时 <https://dotnet.microsoft.com/zh-cn/download/dotnet-framework/net47>`
 
 目前笔者对该软与 xDial 相关的菜单做了汉化，您可以在软件中看到主机的许多性能指标。您还可以在 *选项* 菜单里选择 *开机启动*、 *最小化到托盘*、*更新间隔* 等。 
 
@@ -32,7 +32,7 @@ Windows 性能监视
 
 \
 
-在对话框中填入 xDial 设备对应的 IP 地址(可在设备的设置界面中查看)、CPU 负载的传感器 ID，以及主机其他各项性能指标对应的 传感器 ID，点击 *确认* 关闭对话框
+在对话框中将已复制的传感器 ID 粘贴到 CPU 一栏，用同样的方法找到并填入各项性能指标对应的传感器 ID（没有的可以放空）。还需填入 xDial 设备对应的 IP 地址(可在设备的性能监视界面中查看)。最后点击 *确认* 关闭对话框
 
 .. image:: _static/librehardwaremonitor_dialog_xdial_config.png
    :align: center
@@ -50,13 +50,3 @@ Windows 性能监视
 \
 
 同时，请确保设备的性能监视功能也在开启状态。
-
-
-.. |LibreHardwareMonitor_for_xDial.zip| raw:: html
-
-   <a href="https://gitee.com/r-cute/LibreHardwareMonitor_for_xDial/releases/latest" target="_blank">LibreHardwareMonitor_for_xDial.zip</a>
-
-
-.. |下载安装 .NET Framework 4.7 Runtime| raw:: html
-
-   <a href="https://dotnet.microsoft.com/en-us/download/dotnet-framework/net47" target="_blank">下载安装 .NET Framework 4.7 Runtime</a>
