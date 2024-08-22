@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-cn" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>天气 &mdash; xDial 使用说明 1.0.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=1ea14cda" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=e2b0b38b"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="性能监视" href="perfmon.html" />
+    <link rel="prev" title="表盘" href="clock_faces.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            xDial 使用说明
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="wifi_provision.html">WiFi 配网</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input.html">按键</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ota.html">在线更新</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clock_faces.html">表盘</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="clock_faces.html#id2">系统表盘</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clock_faces.html#id3">可选表盘</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">天气</a></li>
+<li class="toctree-l1"><a class="reference internal" href="perfmon.html">性能监视</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="perfmon_win.html">Windows 性能监视</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">常见问题</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#wifi">如何重置 WiFi？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#id2">无法访问设置页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#id4">没有天气数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#id6">下载表盘后设备不断重启</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#id8">如何恢复出厂设置？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#id9">如何制作表盘（并分享他人）？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#id10">能否刷入第三方固件？</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">xDial 使用说明</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">天气</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>天气<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>天气数据是通过 <strong>免费订阅</strong> <a class="reference external" href="https://www.qweather.com" target="_blank">和风天气</a> 获取的，步骤如下：</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><a class="reference external" href="https://dev.qweather.com" target="_blank">注册</a> 和风天气的开发账号。</p></li>
+<li><p>登录和风天气 <a class="reference external" href="https://console.qweather.com/#/apps" target="_blank">项目管理</a> 页面 → 点击 <em>创建项目</em> → 选择 <em>免费订阅</em> 和 <em>Web API</em> → <em>创建</em> → <em>查看</em> 并复制 KEY。</p></li>
+<li><p>返回网页版设置页面，在 “天气” 栏里填入 KEY，查找并选择您所在城市，然后点击 “保存” 按钮 。</p></li>
+<li><p>此时您便可以在设备的天气界面看到气象数据，设备会根据设置定期更新数据。</p></li>
+</ol>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>免费订阅的 KEY 每日使用次数有限，请勿与他人分享。</p>
+</div>
+<div class="ver">
+<b>视频演示</b>
+<iframe src="https://www.bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&aid=1755038265&bvid=BV1Ct421T7wh&cid=1560534025&p=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+</div></section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="clock_faces.html" class="btn btn-neutral float-left" title="表盘" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="perfmon.html" class="btn btn-neutral float-right" title="性能监视" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2024, hyan。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
