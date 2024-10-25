@@ -20,9 +20,9 @@ Product parameters
 .. csv-table::
 
    "Shell", "Resin 3D printed"
-   "Size", "52*47*54 mm"
-   "Screen", "Ø 32 mm, 240*240 pixels"
-   "Power", "DC 5V, USB Type-C (no battery)"
+   "Size", "52×47×54 mm"
+   "Screen", "Ø 32 mm, 240×240 px"
+   "Power", "5V, USB Type-C"
    "Processor", "ESP32-C3"
    "WiFi", "2.4 GHz, 802.11 b/g/n"
    "Flash", "32 Mbit"
