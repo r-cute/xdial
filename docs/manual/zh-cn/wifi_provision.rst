@@ -19,10 +19,3 @@ WiFi 配网
 .. tip::
    | 设备的 IP 地址是由 WiFi 路由器分配的，建议在配网完成后为设备绑定一个固定的 IP 地址，这能方便后续网页设置页面的访问以及性能监视功能的使用。
    | 这通常可以在 WiFi 路由器的设置页面中完成。
-
-.. raw:: html
-
-   <div class="hor">
-   <b>视频演示</b>
-   <iframe src="https://www.bilibili.com/blackboard/html5mobileplayer.html?aid=1252461039&bvid=BV1sJ4m1j7SP&cid=1486040529&p=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-   </div>

@@ -9,11 +9,15 @@ Weather data can be fetched from :xref:`QWeather <https://www.qweather.com>` **f
   #. Now you shall be able to see weather data in the "Weather" interface on device, data will be sync-ed periodically.
 
 .. note::
-   Multiple devices can't share the same free subscription key, for there's a limitation on the number of requests per day.
+   | Currently the :xref:`limit <https://dev.qweather.com/en/docs/finance/subscription/#comparison>` on the number of weather data request per day for free subscription account is 1000. And 
+   The number of data requests for each device is ((60 / update_interval + 3) * 24) per day.
+   | That makes it possible to share the same key between 2 devices if both set update interval to 5 min, or 4 devices if update interval set to 10 min.
+
+\
 
 .. raw:: html
 
    <div class="ver">
    <b>Video guide</b>
-   <iframe src="https://www.bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&aid=1755038265&bvid=BV1Ct421T7wh&cid=1560534025&p=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+   <iframe src="https://www.bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&aid=113382824870887&bvid=BV1HT1GYdEGS&cid=26498107811&p=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
    </div>

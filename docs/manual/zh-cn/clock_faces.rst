@@ -1,5 +1,5 @@
-表盘
-=======
+自定义表盘
+============
 
 
 .. figure:: _static/menu_cf.dev.png
@@ -46,3 +46,9 @@
 
 \
 
+.. raw:: html
+
+   <div class="ver">
+   <b>视频演示</b>
+   <iframe src="https://www.bilibili.com/blackboard/html5mobileplayer.html?aid=1206308138&bvid=BV1Sf421q7bu&cid=1628971459&p=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+   </div>
