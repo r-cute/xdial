@@ -53,7 +53,7 @@ How to factory reset?
 Can I design my own clock face (and share it)?
 ---------------------------------------------------
 
-It's still impractical for users to design custom clock faces, because currently we don't have a user-friendly software with graphical interface to facilitate this.
+It's currently impractical for users to design custom clock faces, due to lack of a user-friendly software with graphical interface to facilitate this.
 
 
 Can I flash 3rd party firmware?

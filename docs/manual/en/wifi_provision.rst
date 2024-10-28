@@ -18,9 +18,3 @@ Then the device will reboot and WiFi configuration will be saved.
 .. tip::
    It's recommended to bind the device's MAC address to a static IP address. Usually this can be done in the configurtion page of your WiFi router.
 
-.. raw:: html
-
-   <div class="hor">
-   <b>Video guide</b>
-   <iframe src="https://www.bilibili.com/blackboard/html5mobileplayer.html?aid=1252461039&bvid=BV1sJ4m1j7SP&cid=1486040529&p=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-   </div>
