@@ -14,7 +14,7 @@ It can also be manually set it to WiFi provision mode, by:
 Settings web page can't be accessed
 ----------------------------------------
 			
-	#. Make sure your phone is on the same LAN as the device.
+	#. Make sure your phone is in the same WLAN as the device, and the WiFi is 2.4GHz, not 5GHz.
 	#. Check that the device's `settings server is turned on <settings.html>`_
 						
 Weather interface shows no data
