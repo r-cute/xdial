@@ -14,7 +14,7 @@ Windows 性能监视
 .. note::
    该软件需要 .NET 4.7.2 或以上版本支持，Windows 7 以及更早的系统可能需要自行 :xref:`下载安装 .NET Framework 4.7 运行时 <https://dotnet.microsoft.com/zh-cn/download/dotnet-framework/net47>`
 
-目前笔者对该软与 xDial 相关的菜单做了汉化，您可以在软件中看到主机的许多性能指标。您还可以在 *选项* 菜单里选择 *开机启动*、 *最小化到托盘*、*更新间隔* 等。 
+目前笔者对该软件与 xDial 相关的菜单做了汉化，您可以在软件中看到主机的许多性能指标。您还可以在 *选项* 菜单里选择 *开机启动*、 *最小化到托盘*、*更新间隔* 等。 
 
 找到 CPU 负载（Load → CPU Total）对应的指标，单击右键 → 选择 *复制传感器 ID*
 

@@ -22,3 +22,6 @@ Go to the settings web page by scaning the QR code on your device or visiting th
 | You can expend sections by clicking the "+" sign, modify settings then click "Save" button at the bottom.
 | Or you can mess around and click "Cancel" button before new settings are saved.
 | The "Reset" button will factory reset the device.
+
+.. tip::
+   For convenience, you can add the settings web page to home screen.
