@@ -23,6 +23,10 @@ Weather interface shows no data
 	#. Follow instructions on how to `setup weather data <weather.html>`_
 	#. In the device's weather interface, click right button to force a manual update, see if any :xref:`error code <https://dev.qweather.com/en/docs/resource/status-code/>` shows up.
 		
+Device fails to reboot after after firmware update
+------------------------------------------------------
+
+This happens occasionally when newly updated firmware cannot read previous settings, please try delete previous settings by :ref:`factory reset <How to factory reset?>`
 
 Device repeatedly reboots after downloading new clock face
 ---------------------------------------------------------------
