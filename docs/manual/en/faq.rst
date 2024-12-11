@@ -23,6 +23,13 @@ Weather interface shows no data
 	#. Follow instructions on how to `setup weather data <weather.html>`_
 	#. In the device's weather interface, click right button to force a manual update, see if any :xref:`error code <https://dev.qweather.com/en/docs/resource/status-code/>` shows up.
 		
+
+Cryptocurrency prices not showing
+-----------------------------------
+
+	#. Check that :xref:`https://coincap.io <https://coincap.io>` is accessible via your router.
+	#. In the settings web page, make sure you input correct `ids <coincap_assets.html>`_ in the "Others" textbox, if any. 
+
 Device fails to reboot after after firmware update
 ------------------------------------------------------
 
