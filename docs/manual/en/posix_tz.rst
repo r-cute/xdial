@@ -1,12 +1,12 @@
 Time zone
 ========================
 
-The time zone input box accepts POSIX timezone string format.
+The time zone text field accepts POSIX timezone string format.
 
 .. raw:: html
 
    <style>
-      #assets{
+      #tz{
          border-collapse: collapse;
          th,td{border:1px solid grey;text-align: center;}
          th{background-color: lightgrey}
@@ -14,7 +14,12 @@ The time zone input box accepts POSIX timezone string format.
    </style>
    <table id='tz'><thead><tr><th>Region</th><th>Time zone</th></tr></thead><tbody></tbody></table>
    <script>
-   	fetch('../../timezone.js').then(r=>r.json()).then(tz=>
-      	document.querySelector('#tz tbody').innerHTML += Object.entries(tz).map(([key, val])=>`<tr><td>${key}</td><td>${val}</td></tr>`).join('')
-      );
+   	tb = document.querySelector('#tz');
+   	fetch('../../timezone.json').then(r=>r.json()).then(
+   		tz=>Object.entries(tz).forEach(([key, val])=>{
+	   		var row = tb.insertRow(-1);
+	   		row.insertCell(0).innerText = key;
+	   		row.insertCell(1).innerText = val;
+	   	})
+	);
    </script>
