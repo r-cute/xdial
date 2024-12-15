@@ -9,6 +9,7 @@ User Manual
    settings
    ota
    clock_faces
+   alarms
    weather
    perfmon
    faq
