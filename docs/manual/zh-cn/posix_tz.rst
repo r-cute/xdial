@@ -17,7 +17,7 @@
    <table id='tz'><thead><tr><th>地区</th><th>时区</th></tr></thead><tbody></tbody></table>
    <script>
       tb = document.querySelector('#tz');
-      fetch('../../timezone.json').then(r=>r.json()).then(
+      fetch('../timezone.json').then(r=>r.json()).then(
          tz=>Object.entries(tz).forEach(([key, val])=>{
             var row = tb.insertRow(-1);
             row.insertCell(0).innerText = key;

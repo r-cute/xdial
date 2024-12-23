@@ -42,8 +42,9 @@ jobs:
         run: |
           cd xdial/docs/manual
           bash gh_make.sh ../../manual
+          cd ../../docs/manual
+          cp *.html *.js *.json ../manual
           cd ../..
-          cp docs/manual/index.html manual
           rm -r docs/manual
           mv manual docs
           cd ..
