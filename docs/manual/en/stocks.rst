@@ -1,11 +1,18 @@
 Stocks
 =========
 
-Stock ticker symbols consist of
+The values below the line are: opening price, highest and lowest price in the day.
 
-* *A股* 代码为 6 位数字，如平安银行是 `000001`
-* *港股* 是 5 位数字，如小米集团 `01801`
-* *美股* 代码一般是大写的英文，比如特斯拉是 `TSLA`
+Stock ids
+--------------
+
+.. _ids:
+
+Stock ids consist of a 2-letter exchange market symbol and the stock code (ticker symbol). Note that stock ids are case sensitive!
+
+* Exchange markets in **Chinese mainland** includes Shanghai "sh", Shenzhen "sz" and Beijing "bj" Exchange. e.g. 贵州茅台 `sh600519`, 平安银行 `sz000001`, 聚星科技 `bj920111`
+* For **Hong Kong** exchange market, it's "hk" + 5 digits. e.g. XiaoMi Corporation is `hk01810`
+* For stocks in the **U.S.**, it's "us" + ticker symbol. e.g. Tesla is `usTSLA`
 
 .. raw:: html
 
@@ -40,3 +47,4 @@ Stock ticker symbols consist of
    </style>
    <div style="display:flex;justify-content:space-between;gap:0.15em"><input id='stock_id' type='text' placeholder='usTSLA' style="flex:1"/><button onclick='var st_id=eid("stock_id");if(st_id.value.length==0)st_id.value=st_id.placeholder;query_stock(st_id.value.split(",")[0].trim())'>Test</button></div>
    <br><table id='tb'></table>
+   <br><br><br><br>
