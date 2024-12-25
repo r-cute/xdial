@@ -43,7 +43,7 @@ jobs:
           cd xdial/docs/manual
           bash gh_make.sh ../../manual
           cd ../../docs/manual
-          mv *.json *.js *.html ../../manual
+          mv *.json *.js *.html *.js.gz ../../manual
           cd ../..
           rm -r docs/manual
           mv manual docs
