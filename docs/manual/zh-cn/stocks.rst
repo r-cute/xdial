@@ -1,10 +1,17 @@
 股票
 =======
 
+股票界面的大数字为当前价格，其下方显示当天或最后一个交易日的开盘价、最高价和最低价。在收盘时，当前价即为收盘价。
+
+id 号
+-----------
+
+.. _ids:
+
 股票 id 号以交易所两位字母开头，加上数字或英文代码。注意大小写不能写错！
 
-* *A股* 分为上交所（sh）、深交所（sz）和北交所（bj），如上证指数 `sh000001`, 平安银行 `sz000001`, 聚星科技 `bj920111`
-* *港股* 是 "hk" + 5 位数字, 如小米集团 `hk01810`
+* *A股* 分为上交所 "sh"、深交所 "sz" 和北交所 "bj"，加上 6 位数字。如贵州茅台 `sh600519`, 平安银行 `sz000001`, 聚星科技 `bj920111`
+* *港股* 一般是 "hk" + 5 位数字, 如小米集团 `hk01810`；指数则是 "hk" + 大写字母，如恒生指数 `hkHSI`
 * *美股* 是 "us" + 大写的英文，如特斯拉 `usTSLA`
 
 .. raw:: html
@@ -35,5 +42,6 @@
          td:first-child{background-color: lightgrey}
       }
    </style>
-   <div style="display:flex;justify-content:space-between;gap:0.15em"><input id='stock_id' placeholder="sz000001" type='text' style="flex:1"/><button onclick='var st_id=eid("stock_id");if(st_id.value.length==0)st_id.value=st_id.placeholder;query_stock(st_id.value.split(",")[0].trim())'>测试</button></div>
+   <div style="display:flex;justify-content:space-between;gap:0.15em"><input id='stock_id' placeholder="sh600519" type='text' style="flex:1"/><button onclick='var st_id=eid("stock_id");if(st_id.value.length==0)st_id.value=st_id.placeholder;query_stock(st_id.value.split(",")[0].trim())'>测试</button></div>
    <br><table id='tb'></table>
+   <br><br><br><br>
