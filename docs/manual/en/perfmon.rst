@@ -19,8 +19,7 @@ You also need to download and run a client software on your PC, which can period
    :maxdepth: 1
 
    perfmon_win
-   perfmon_mac
-   perfmon_linux
+   perfmon_gen
 
 .. warning::
    Currently only Windows is supported, more will come later.

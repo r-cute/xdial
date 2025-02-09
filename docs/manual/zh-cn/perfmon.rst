@@ -19,8 +19,7 @@
    :maxdepth: 1
 
    perfmon_win
-   perfmon_mac
-   perfmon_linux
+   perfmon_gen
 
 .. warning::
    目前刚适配了 Windows 平台，将来会继续完善。
