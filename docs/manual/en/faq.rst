@@ -1,7 +1,12 @@
 FAQ
 ============
 
-Firstly, make sure you `update firmware <ota.html>`_ to latest version.
+`update firmware <ota.html>`_ to latest version.
+
+When pluged, nothing shows on screen.
+---------------------------------------------
+
+It doesn't fit with Apple's double-ended type-C cable, try using a with a normal type-C cable (with type-A on the other end).
 
 How to re-configure WiFi settings?
 ---------------------------------------
@@ -32,7 +37,7 @@ Cryptocurrency prices not showing
 	#. Check that :xref:`https://coincap.io <https://coincap.io>` is accessible via your router.
 	#. In the settings web page, make sure you input correct `ids <coincap_assets.html>`_ in the "Others" textbox, if any. 
 
-Device fails to reboot after after firmware update
+Device fails to reboot after firmware update
 ------------------------------------------------------
 
 This happens occasionally when newly updated firmware cannot read previous settings, please try delete previous settings by :ref:`factory reset <How to factory reset?>`
