@@ -9,8 +9,7 @@
 	#. 此时您便可以在设备的天气界面看到气象数据，设备会根据设置定期更新数据。
 
 .. note::
-   | 设备每天的天气数据请求次数约为 ((60 / 刷新间隔 + 3) * 24) 次，而目前免费订阅账号的数据请求 :xref:`限制 <https://dev.qweather.com/docs/finance/subscription/#comparison>` 是 1000 次/天。
-   | 因此，如果刷新间隔都设为 5 分钟，则两个设备可以共享一个 KEY; 如果都设为 10 分钟，则 4 个设备可以共用一个 KEY。
+   一台设备的天气数据请求次数约为 ((60 / 刷新间隔 + 5) * 24) 次/天，远低于 :xref:`和风天气提供的免费额度 <https://blog.qweather.com/announce/free-subscription-service-update>`。
 
 \
 

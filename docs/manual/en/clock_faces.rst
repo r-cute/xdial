@@ -1,4 +1,4 @@
-Clock Face customization
+Clock Face Customization
 ============================
 
 
