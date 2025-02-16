@@ -1,7 +1,12 @@
 FAQ
 ============
 
-Firstly, make sure you `update firmware <ota.html>`_ to latest version.
+`update firmware <ota.html>`_ to latest version.
+
+When pluged, nothing shows on screen.
+---------------------------------------------
+
+It doesn't fit with Apple's double-ended type-C cable, try using a with a normal type-C cable (with type-A on the other end).
 
 How to re-configure WiFi settings?
 ---------------------------------------
