@@ -1,0 +1,53 @@
+<!DOCTYPE html><html><head>
+	<title>xDial</title>
+	<meta charset="UTF-8"><meta name='viewport' content='width=device-width, initial-scale=1'/>
+	<meta http-equiv="Content-Security-Policy" content="connect-src http:" />
+</head><script src="util.js"></script>
+<style>
+	*{font-size:1em;margin:.25em}
+	h1{font-size:1.25em;text-align:center;margin-top: 1em;}
+	div:has(h2){border-top:1px solid #ccc;
+		h2{
+			font-weight: normal; display: flex;justify-content: space-between;
+			a{text-decoration: none;margin-right:0.5em;}
+		}
+		div{overflow: auto;white-space: nowrap;
+			img{width:64px;height:64px;border-radius:50%;}
+		}
+	}
+</style><body>
+	<div style="float:left;margin:0;">📦<select oninput="update_asset_ln()" id="server"><option value="github" data-fmt="https://github.com/r-cute/xdial-cf-gallery/releases/download/${ver}/${name}.bin">github</option><option value="gitee" data-fmt="https://gitee.com/r-cute/xdial-cf-gallery/releases/download/${ver}/${name}.bin">gitee</option></select></div>
+</body><script>
+	str_fmt=(template,args)=>Object.entries(args).reduce((result, [arg, val]) => result?.replace(`$\{${arg}}`, `${val}`),template);
+	qry=new URLSearchParams(location.search);
+	if(qry.get('asset_fmt')) {
+		q('#server').parentNode.style.display="none";
+	} else if(qry.get('server')) {
+		q('#server').value=qry.get('server');
+	} 
+	make_asset_url=(ver,name)=>str_fmt(qry.get('asset_fmt')??q('#server>option:checked').dataset.fmt,{ver:ver,name:name});
+	prev_num=4;
+	ver="1.0.0";
+	multi_lang();
+	range=x=>Array(x).keys();
+	(
+		ml('h1')(['Clock Face Gallery','表盘广场'])
+		+j2h({'<>':'div','[]':split,html:[{'<>':'h2',html:[ml('span'),{'<>':'div',html:x=>`<a href='#0' onclick='cpy_ln("${x[2]}")'>🔗</a><a data-name='${x[2]}' onclick='return confirm(selang("New clock face will overwrite the current one, continue?/新表盘将覆盖当前的可选表盘, 是否继续?"))' target='_blank'>⬇️</a>`}]},{'<>':'div',html:x=>[...range(parseInt(x[3]))].map(i=>`<img src="assets/${x[2]}/${i}.png" loading="lazy" />`).join('')}]}).batch([
+			'iKun/iKun/ikun/7',
+			'Abstract/抽象/abstract/5',
+			'Puppies/小狗/puppies/5',
+			'Paris Olympics 2024/巴黎奥运 2024/paris_olympics/18',
+			'Emoji/Emoji/emoji/14',
+			'Biological clock/生物钟/biological_clock/3',
+			'Pokémon/宝可梦/pokemon/8',
+			'Rick and Morty/瑞克和莫蒂/rick_and_morty/6',
+			'SpongeBob/海绵宝宝/spongebob/4',
+			'Capybara/卡皮巴拉/capybara/2',
+		])
+	).dom();
+	qa_ln=s=>qa('a').filter(e=>e.textContent==s);
+	cpy_ln=n=>{navigator.clipboard.writeText(`${make_asset_url(ver,n)}`);alert(selang("Copied to clipboard/链接已复制"));};
+	update_asset_ln=()=>qa_ln('⬇️').forEach(e=>e.href=decodeURIComponent(str_fmt(qry.get("dl"),{url:make_asset_url(ver,e.dataset.name)})));
+	update_asset_ln();
+	qry.get('dl')?.length||qa_ln('⬇️').forEach(e=>{e.style.opacity=0.5;e.style['pointer-events']='none';});
+</script></html>
