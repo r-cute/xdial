@@ -34,6 +34,9 @@ Weather interface shows no data
 Cryptocurrency prices not showing
 -----------------------------------
 
+	:xref:`https://coincap.io <https://coincap.io>` now impose limits on free subscription. This function is now basically unavailable.
+	
+..
 	#. Check that :xref:`https://coincap.io <https://coincap.io>` is accessible via your router.
 	#. In the settings web page, make sure you input correct `ids <coincap_assets.html>`_ in the "Others" textbox, if any. 
 

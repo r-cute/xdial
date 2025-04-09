@@ -12,7 +12,6 @@ User Manual
    alarms
    weather
    perfmon
-   crypto
    stocks
 
 .. toctree::

@@ -30,9 +30,13 @@
 	#. 完成 `天气设置 <weather.html>`_
 	#. 若天气界面仍然没有数据，可点击右键刷新，根据和风天气网站对应的 :xref:`错误状态码 <https://dev.qweather.com/docs/resource/status-code/>` 排查原因。
 
+
 加密货币价格无法显示
 --------------------
-
+	
+	第三方数据源开始收费，该功能已不可用
+	
+..
 	#. 确保 :xref:`https://coincap.io <https://coincap.io>` 网站能够通过您的路由器正常访问
 	#. 检查设置页面中加密货币的其他一栏是否有填错 `id 号 <coincap_assets.html>`_
 
