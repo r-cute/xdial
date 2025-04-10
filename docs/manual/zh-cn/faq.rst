@@ -33,12 +33,11 @@
 
 加密货币价格无法显示
 --------------------
-	
-	第三方数据源开始收费，该功能已不可用
-	
-..
-	#. 确保 :xref:`https://coincap.io <https://coincap.io>` 网站能够通过您的路由器正常访问
-	#. 检查设置页面中加密货币的其他一栏是否有填错 `id 号 <coincap_assets.html>`_
+
+⚠ 老版本的用户请先更新版本，然后去除原来勾选的币种，点击保存，再重新勾选
+
+	#. 确保 :xref:`coinlore api 测试 <https://api.coinlore.net/api/ticker/?id=90>` 能够通过您的路由器正常访问
+	#. 检查设置页面中加密货币的其他一栏是否有填错 `id 号 <crypto.html#crypto_ids>`_
 
 
 更新固件后无法启动

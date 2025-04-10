@@ -12,6 +12,7 @@
    alarms
    weather
    perfmon
+   crypto
    stocks
 
 .. toctree::
