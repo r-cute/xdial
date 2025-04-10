@@ -18,9 +18,16 @@ id 号
       }
    </style>
    <table id='assets'><thead><tr><th>id</th><th>缩写</th><th>名称</th></tr></thead><tbody></tbody></table>
+   <br><button onclick="get_data(page_id++)">更多</button>
    <br><br><br><br>
    <script>
-      fetch('https://api.coincap.io/v2/assets').then(r=>r.json()).then(
-         assets=>document.querySelector('#assets tbody').innerHTML += assets.data.map(({id,name,symbol})=>`<tr><td>${id}</td><td>${symbol}</td><td>${name}</td></tr>`).join('')
-      );
+      async function get_data(start, limit) { // limit max = 100
+         await fetch(`https://api.coinlore.net/api/tickers/?start=${start}&limit=${limit}`).then(r=>r.json()).then(
+            assets=>document.querySelector('#assets tbody').innerHTML += assets.data.map(({id,name,symbol})=>`<tr><td>${id}</td><td>${symbol}</td><td>${name}</td></tr>`).join('')
+         );
+      }
+      page_id = 0;
+      for(page_id=0;page_id<3;page_id++) {
+         await get_data(page_id, 100);
+      }
    </script>
