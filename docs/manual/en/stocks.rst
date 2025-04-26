@@ -1,6 +1,16 @@
 Stocks
 =========
 
+.. raw:: html
+
+   <div class="ver">
+   <b>Video guide</b>
+   <iframe src="https://www.bilibili.com/blackboard/html5mobileplayer.html?aid=113853459334536&bvid=BV1fvwzeuE4i&cid=27954251550&p=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+   </div>
+
+
+In the menu interface, long press right button to switch between the Stock app and Cryptocurrency app.
+
 The values below the line are: opening price, highest and lowest price in the day.
 
 Stock ids
@@ -8,11 +18,15 @@ Stock ids
 
 .. _ids:
 
-Stock ids consist of a 2-letter exchange market symbol and the stock code (ticker symbol). Note that stock ids are case sensitive!
+Note that stock ids are case sensitive!
+
+* For **American** stocks, stock id is "us" + ticker symbol. e.g. Tesla is `usTSLA`
 
 * Exchange markets in **Chinese mainland** includes Shanghai "sh", Shenzhen "sz" and Beijing "bj" Exchange. e.g. 贵州茅台 `sh600519`, 平安银行 `sz000001`, 聚星科技 `bj920111`
+
 * For **Hong Kong** exchange market, it's "hk" + 5 digits. e.g. XiaoMi Corporation is `hk01810`
-* For stocks in the **U.S.**, it's "us" + ticker symbol. e.g. Tesla is `usTSLA`
+
+* **Taiwan** stock has id format of "tse_xxxx.tw" for TWSE and "otc_xxxx.tw" for TPEx. e.g. 台積電 `tse_2330.tw`
 
 .. raw:: html
 
@@ -45,6 +59,6 @@ Stock ids consist of a 2-letter exchange market symbol and the stock code (ticke
          td:first-child{background-color: lightgrey}
       }
    </style>
-   <div style="display:flex;justify-content:space-between;gap:0.15em"><input id='stock_id' type='text' placeholder='usTSLA' style="flex:1"/><button onclick='var st_id=eid("stock_id");if(st_id.value.length==0)st_id.value=st_id.placeholder;query_stock(st_id.value.split(",")[0].trim())'>Test</button></div>
+   <div style="display:flex;justify-content:space-between;gap:0.15em"><input id='stock_id' placeholder="usTSLA" type='text' style="flex:1"/><button onclick='var st_id=eid("stock_id");if(st_id.value.length==0)st_id.value=st_id.placeholder;var sid=st_id.value.split(",")[0].trim();if(sid.endsWith(".tw"))location.href="https://mis.twse.com.tw/stock/detail-item?id="+sid;else query_stock(sid)'>测试</button></div>
    <br><table id='tb'></table>
    <br><br><br><br>

@@ -1,7 +1,10 @@
 Cryptocurrencies
 ====================
 
-Value to USD and 24-hour change rate are fetched from :xref:`coinlore.com <https://www.coinlore.com/all_coins>`
+.. figure:: _static/crypto.dev.png
+   :class: dev
+
+   Value to USD and 24-hour change rate are fetched from :xref:`coinlore.com <https://www.coinlore.com/all_coins>`
 
 Crypto ids
 ----------------
