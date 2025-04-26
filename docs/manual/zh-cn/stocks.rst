@@ -11,8 +11,9 @@ id 号
 股票 id 号以交易所两位字母开头，加上数字或英文代码。注意大小写不能写错！
 
 * *A股* 分为上交所 "sh"、深交所 "sz" 和北交所 "bj"，加上 6 位数字。如贵州茅台 `sh600519`, 平安银行 `sz000001`, 聚星科技 `bj920111`
-* *港股* 一般是 "hk" + 5 位数字, 如小米集团 `hk01810`；指数则是 "hk" + 大写字母，如恒生指数 `hkHSI`
 * *美股* 是 "us" + 大写的英文，如特斯拉 `usTSLA`
+* *港股* 一般是 "hk" + 5 位数字, 如小米集团 `hk01810`；指数则是 "hk" + 大写字母，如恒生指数 `hkHSI`
+* *台湾* 股票分为台湾证券交易所 "tse" 和台北证券交易所 "otc"，id 号分别为 "tse_xxxx.tw" 和 "otc_xxxx.tw", 如台積電 `tse_2330.tw`
 
 .. raw:: html
 
@@ -42,6 +43,6 @@ id 号
          td:first-child{background-color: lightgrey}
       }
    </style>
-   <div style="display:flex;justify-content:space-between;gap:0.15em"><input id='stock_id' placeholder="sh600519" type='text' style="flex:1"/><button onclick='var st_id=eid("stock_id");if(st_id.value.length==0)st_id.value=st_id.placeholder;query_stock(st_id.value.split(",")[0].trim())'>测试</button></div>
+   <div style="display:flex;justify-content:space-between;gap:0.15em"><input id='stock_id' placeholder="sh600519" type='text' style="flex:1"/><button onclick='var st_id=eid("stock_id");if(st_id.value.length==0)st_id.value=st_id.placeholder;var sid=st_id.value.split(",")[0].trim();if(sid.endsWith(".tw"))location.href="https://mis.twse.com.tw/stock/detail-item?id="+sid;else query_stock(sid)'>测试</button></div>
    <br><table id='tb'></table>
    <br><br><br><br>
