@@ -7,7 +7,7 @@ Dial and Buttons
 \   
 
 | Usually the left button is denoted with ← icon, you can press it to go back to menu interface.
-| In other caces, when special functions are assign to left button, to go back, you'll have to long press left button.
+| In other cases, when special functions are assign to left button, you'll have to long press left button to go back.
 
 .. figure:: _static/left_btn_func.dev.png
    :class: dev
