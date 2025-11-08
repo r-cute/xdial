@@ -1,4 +1,4 @@
-declare -a lang_ls=("en" "zh-cn")
+declare -a lang_ls=("en" "zh")
 
 for lang in "${lang_ls[@]}"
 do
