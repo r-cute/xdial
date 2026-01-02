@@ -15,6 +15,14 @@ User Manual
    crypto
    stocks
 
+
+.. raw:: html
+
+   <div class="ver">
+   <iframe src="https://www.bilibili.com/blackboard/html5mobileplayer.html?aid=115506484942996&bvid=BV1cS2KBTEXN&cid=33779417483&p=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+   </div>
+
+
 .. toctree::
    :maxdepth: 2
    
