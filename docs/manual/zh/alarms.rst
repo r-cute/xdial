@@ -3,6 +3,12 @@
 
 闹钟功能和手机上的基本相同 
 
+.. image:: _static/alarm.web.png
+   :class: web
+   :align: center
+
+\
+
 贪睡模式
 ---------------
 

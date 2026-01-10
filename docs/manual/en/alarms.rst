@@ -1,7 +1,13 @@
 Alarms
 ================
 
-The alarms behave similarly to alarms on phones. 
+The alarms behave similarly to alarms on phones.
+
+.. image:: _static/alarm.web.png
+   :class: web
+   :align: center
+
+\ 
 
 Snooze mode
 ---------------

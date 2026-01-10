@@ -1,4 +1,4 @@
-Clock Face Customization
+Clock Faces
 ============================
 
 
@@ -10,14 +10,14 @@ Clock Face Customization
 .. figure:: _static/cf_list.dev.png
    :class: dev
 
-   Choose from built-in clock faces and optional ones.
+   Choose from builtin clock faces and optional ones.
 
 
-Built-in clock faces
+Builtin clock faces
 --------------------------
 
 | In settings web page, select relevant clock face from drop down menu. 
-| Color or style of built-in clock faces are customizable.
+| Color or style of builtin clock faces are customizable.
 
 .. image:: _static/clock_faces.web.png
    :class: web
