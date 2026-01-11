@@ -1,0 +1,17 @@
+.inline{display: inline}
+.block{display:block}
+
+div.admonition{border-radius: 6px;}
+p.admonition-title{border-top-left-radius: 6px;border-top-right-radius: 6px;}
+
+img.dev{width:160px;}
+figure:has(>img.dev){display: flex;align-items: center;}
+figure>img.dev{margin-right: 1em}
+
+img.web{border:1px solid gray; border-radius: 6px; max-width: 300px}
+img.libre{border:1px solid gray; border-radius: 6px;max-width:100%;width:420px}
+
+div:has(>iframe){text-align: center;width:100%;margin: 1.5em auto;}
+iframe{display: block;margin: 0.5em auto;border-radius:8px;}
+div.hor>iframe{width:100%;aspect-ratio: 16/9;max-width: 550px}
+div.ver>iframe{width:70%;aspect-ratio: 9/16;max-width: 300px}
