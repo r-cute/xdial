@@ -28,7 +28,7 @@ Weather interface shows no data
 ------------------------------------
 
 	#. Follow instructions on how to `setup weather data <weather.html>`_
-	#. In the device's weather interface, click right button to force a manual update, see if any :xref:`error code <https://dev.qweather.com/en/docs/resource/status-code/>` shows up.
+	#. Put ``https://<HOST API>/geo/v2/city/lookup?location=beijing&key=<API KEY>`` in your browser address field, replace <HOST API> and <API KEY> with real one, see if the returned content contains any :xref:`error code <https://dev.qweather.com/en/docs/resource/status-code/>`.
 		
 
 Cryptocurrency prices not showing

@@ -28,7 +28,7 @@
 -------------------
 
 	#. 完成 `天气设置 <weather.html>`_
-	#. 若天气界面仍然没有数据，可点击右键刷新，根据和风天气网站对应的 :xref:`错误状态码 <https://dev.qweather.com/docs/resource/status-code/>` 排查原因。
+	#. 在浏览器的地址栏输入 ``https://<HOST API>/geo/v2/city/lookup?location=beijing&key=<API KEY>``，将 <HOST API> 和 <API KEY> 替换为真实信息，看返回的内容是否包含 :xref:`错误状态码 <https://dev.qweather.com/docs/resource/status-code/>` 并排查原因。
 
 
 加密货币价格无法显示

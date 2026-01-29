@@ -10,7 +10,7 @@ Weather data can be fetched from :xref:`QWeather <https://www.qweather.com/en>` 
   #. type in the city you're at, the click 🔍search and select your location, click "Save" button.
   #. Now you shall see weather data appear in the "Weather" interface on device.
 
-To disable the weather service, just clear the location input field.
+To disable the weather service, simply clear the location input field.
 
 .. note::
    The number of weather data requests for each device is ((60 / update_interval + 5) * 24) per day, it's far less than the :xref:`free subscription limit <https://blog.qweather.com/announce/free-subscription-service-update>` . 
